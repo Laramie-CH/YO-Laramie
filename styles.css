@@ -1,0 +1,247 @@
+/* Variables */
+:root {
+    --avocado-green: #578B2F;
+    --avocado-yellow: #E6E600;
+    --avocado-brown: #8B4513;
+}
+
+/* Carrusel */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-item {
+    height: 600px;
+    background: var(--avocado-green);
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(90%);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-caption h2 {
+    color: var(--avocado-yellow);
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--avocado-green);
+    border: 2px solid white;
+}
+
+.carousel-indicators button.active {
+    background: white;
+}
+
+/* Puzle */
+.puzzle-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.puzzle-board {
+    width: 400px;
+    height: 400px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+    background: var(--avocado-green);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.puzzle-piece {
+    background-size: 100% 100%;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.puzzle-piece:hover {
+    transform: scale(1.05);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.puzzle-piece::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.puzzle-piece.empty {
+    background: transparent;
+    box-shadow: none;
+    cursor: default;
+}
+
+.moves-counter {
+    font-size: 1.2rem;
+    color: var(--avocado-brown);
+    font-weight: bold;
+    text-align: center;
+}
+
+.moves-counter span:first-child {
+    color: #666;
+}
+
+.puzzle-controls {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.puzzle-controls button {
+    margin: 0 0.5rem;
+}
+
+/* Sección Nutricional */
+#nutrition {
+    background: linear-gradient(135deg, var(--avocado-green) 0%, var(--avocado-brown) 100%);
+    color: white;
+    padding: 4rem 0;
+}
+
+#nutrition h2 {
+    color: var(--avocado-yellow);
+    margin-bottom: 2.5rem;
+}
+
+#nutrition .card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+#nutrition .lead {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--avocado-brown);
+    margin-bottom: 1.5rem;
+}
+
+/* Navbar */
+.bg-avocado {
+    background-color: var(--avocado-green) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-brand i {
+    color: var(--avocado-yellow);
+    margin-right: 0.5rem;
+}
+
+/* Main Content */
+.avocado-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.avocado-card:hover {
+    transform: translateY(-5px);
+}
+
+.avocado-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.avocado-card h3 {
+    color: var(--avocado-brown);
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.avocado-card p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: var(--avocado-brown);
+}
+
+footer h3 {
+    color: var(--avocado-yellow);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+/* Animations */
+@keyframes avocadoBounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.avocado-bounce {
+    animation: avocadoBounce 2s infinite;
+}
