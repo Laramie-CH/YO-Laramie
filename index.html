@@ -6,28 +6,29 @@
     <title>Avocado World 🥑</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-avocado">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brown">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-avocado"></i> Avocado World</a>
+            <a class="navbar-brand" href="#"><i class="fas fa-heart"></i> Avocado World 🥑</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#types">Tipos</a>
+                        <a class="nav-link" href="#types"><i class="fas fa-leaf"></i> Tipos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#games">Juegos</a>
+                        <a class="nav-link" href="#games"><i class="fas fa-gamepad"></i> Juegos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#stories">Historias</a>
+                        <a class="nav-link" href="#stories"><i class="fas fa-book"></i> Historias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#puzzle">Puzzle</a>
+                        <a class="nav-link" href="#puzzle"><i class="fas fa-puzzle-piece"></i> Puzzle</a>
                     </li>
                 </ul>
             </div>
@@ -36,51 +37,174 @@
 
     <!-- Main Content -->
     <main class="container mt-5">
-        <!-- Carrusel -->
-        <div id="avocadoCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#avocadoCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#avocadoCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#avocadoCarousel" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#avocadoCarousel" data-bs-slide-to="3"></button>
+        <!-- Bienvenida con efectos de brillo -->
+        <section class="hero-section text-center mb-5">
+            <h1 class="display-4 mb-4">¡Bienvenidos al Mundo del Aguacate! 🥑</h1>
+            <p class="lead mb-4">Descubre las infinitas posibilidades culinarias</p>
+            <a href="recetas.html" class="btn btn-avocado btn-lg"><i class="fas fa-utensils"></i> Ver Recetas</a>
+        </section>
+
+        <!-- Sección Tipos de Aguacate -->
+        <section id="types" class="mb-5">
+            <h2 class="text-center mb-4">Tipos de Aguacate</h2>
+            <div class="row">
+                <!-- Hass -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-transparent border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="mb-0">Hass</h3>
+                                <i class="fas fa-heart text-success"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <img src="https://th.bing.com/th/id/OIP.D-sNK82SdgEk6-h7YNR2ogHaE8?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" 
+                                     class="rounded-circle border border-success border-4 p-2" 
+                                     alt="Aguacate Hass">
+                            </div>
+                            <div class="info-group text-justify">
+                                <p><i class="fas fa-paint-brush me-2"></i>Color: Verde oscuro a negro cuando madura</p>
+                                <p><i class="fas fa-ruler me-2"></i>Tamaño: Mediano</p>
+                                <p><i class="fas fa-texture me-2"></i>Textura de la piel: Rugosa</p>
+                                <p><i class="fas fa-utensils me-2"></i>Sabor: Cremoso y mantecoso</p>
+                                <p class="text-muted"><i class="fas fa-star me-2"></i>Dato curioso: Es la variedad más cultivada y consumida en el mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fuerte -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-transparent border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="mb-0">Fuerte</h3>
+                                <i class="fas fa-heart text-success"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <img src="https://th.bing.com/th/id/OIP.eOFPa_DB4mL1f8G-1puFyAHaFj?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" 
+                                     class="rounded-circle border border-success border-4 p-2" 
+                                     alt="Aguacate Fuerte">
+                            </div>
+                            <div class="info-group text-justify">
+                                <p><i class="fas fa-paint-brush me-2"></i>Color: Verde brillante, incluso cuando está maduro</p>
+                                <p><i class="fas fa-ruler me-2"></i>Tamaño: Mediano a grande</p>
+                                <p><i class="fas fa-texture me-2"></i>Textura de la piel: Lisa</p>
+                                <p><i class="fas fa-utensils me-2"></i>Sabor: Suave y menos aceitoso que el Hass</p>
+                                <p class="text-muted"><i class="fas fa-star me-2"></i>Dato curioso: Es una variedad híbrida entre aguacate mexicano y guatemalteco.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bacon -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-transparent border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="mb-0">Bacon</h3>
+                                <i class="fas fa-heart text-success"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <img src="https://th.bing.com/th/id/OIP.twp63iHhOPDenO45j5Mj8AHaHa?w=587&h=587&rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" 
+                                     class="rounded-circle border border-success border-4 p-2" 
+                                     alt="Aguacate Bacon">
+                            </div>
+                            <div class="info-group text-justify">
+                                <p><i class="fas fa-paint-brush me-2"></i>Color: Verde claro</p>
+                                <p><i class="fas fa-ruler me-2"></i>Tamaño: Mediano</p>
+                                <p><i class="fas fa-texture me-2"></i>Textura de la piel: Suave y delgada</p>
+                                <p><i class="fas fa-utensils me-2"></i>Sabor: Suave y más ligero</p>
+                                <p class="text-muted"><i class="fas fa-star me-2"></i>Dato curioso: Ideal para climas fríos; se cultiva mucho en California.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zutano -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-transparent border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="mb-0">Zutano</h3>
+                                <i class="fas fa-heart text-success"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <img src="https://th.bing.com/th/id/OIP.VFD8pI0lsAcJfg6KInvejwAAAA?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" 
+                                     class="rounded-circle border border-success border-4 p-2" 
+                                     alt="Aguacate Zutano">
+                            </div>
+                            <div class="info-group text-justify">
+                                <p><i class="fas fa-paint-brush me-2"></i>Color: Verde claro a medio</p>
+                                <p><i class="fas fa-ruler me-2"></i>Tamaño: Mediano</p>
+                                <p><i class="fas fa-texture me-2"></i>Textura de la piel: Lisa y brillante</p>
+                                <p><i class="fas fa-utensils me-2"></i>Sabor: Más acuoso y menos cremoso</p>
+                                <p class="text-muted"><i class="fas fa-star me-2"></i>Dato curioso: Resiste bien las temperaturas bajas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pinkerton -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-transparent border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="mb-0">Pinkerton</h3>
+                                <i class="fas fa-heart text-success"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <img src="https://th.bing.com/th/id/R.f52bb07357732395f626d125414feea8?rik=BBzyoPAXC%2ftwzw&riu=http%3a%2f%2fspecialtyproduce.com%2fsppics%2f7520.png&ehk=oKC4x3DGlw6p0jtDZXAEdb7lFze15P0axPv7JShkKH0%3d&risl=&pid=ImgRaw&r=0" 
+                                     class="rounded-circle border border-success border-4 p-2" 
+                                     alt="Aguacate Pinkerton">
+                            </div>
+                            <div class="info-group text-justify">
+                                <p><i class="fas fa-paint-brush me-2"></i>Color: Verde oscuro</p>
+                                <p><i class="fas fa-ruler me-2"></i>Tamaño: Alargado, de mediano a grande</p>
+                                <p><i class="fas fa-texture me-2"></i>Textura de la piel: Gruesa y rugosa</p>
+                                <p><i class="fas fa-utensils me-2"></i>Sabor: Muy cremoso</p>
+                                <p class="text-muted"><i class="fas fa-star me-2"></i>Dato curioso: Tiene una semilla pequeña y mucha pulpa aprovechable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reed -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-transparent border-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="mb-0">Reed</h3>
+                                <i class="fas fa-heart text-success"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <img src="https://th.bing.com/th/id/OIP.PWlxKBSiRdh67b7hNVWdZAAAAA?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" 
+                                     class="rounded-circle border border-success border-4 p-2" 
+                                     alt="Aguacate Reed">
+                            </div>
+                            <div class="info-group text-justify">
+                                <p><i class="fas fa-paint-brush me-2"></i>Color: Verde incluso cuando está maduro</p>
+                                <p><i class="fas fa-ruler me-2"></i>Tamaño: Grande, casi esférico</p>
+                                <p><i class="fas fa-texture me-2"></i>Textura de la piel: Gruesa y ligeramente rugosa</p>
+                                <p><i class="fas fa-utensils me-2"></i>Sabor: Muy mantecoso y suave</p>
+                                <p class="text-muted"><i class="fas fa-star me-2"></i>Dato curioso: Se mantiene fresco más tiempo tras ser cortado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1596757125337-66f89814f75b?w=1260&auto=format" class="d-block w-100" alt="Guacamole">
-                    <div class="carousel-caption">
-                        <h2>¡Bienvenidos al Mundo del Aguacate! 🥑</h2>
-                        <p>Descubre las infinitas posibilidades culinarias</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1260&auto=format" class="d-block w-100" alt="Aguacates frescos">
-                    <div class="carousel-caption">
-                        <h2>Tipo Hass</h2>
-                        <p>El más conocido y consumido en el mundo</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1596757125337-66f89814f75b?w=1260&auto=format" class="d-block w-100" alt="Aguacate cortado">
-                    <div class="carousel-caption">
-                        <h2>Beneficios Nutricionales</h2>
-                        <p>Una fuente excelente de grasas saludables</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=1260&auto=format" class="d-block w-100" alt="Aguacate en ensalada">
-                    <div class="carousel-caption">
-                        <h2>Recetas Creativas</h2>
-                        <p>Descubre nuevas formas de disfrutarlo</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#avocadoCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#avocadoCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
+        </section>
 
         <!-- Sección Nutricional -->
         <section id="nutrition" class="mb-5">
@@ -101,13 +225,67 @@
             </div>
         </section>
 
+        <!-- Sección Historias -->
+        <section id="stories" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Historias 📚</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="story-header text-center mb-4">
+                                    <i class="fas fa-seedling fa-3x text-success"></i>
+                                    <h3 class="card-title mt-3">El Aguacate y el Árbol Mágico 🌳</h3>
+                                </div>
+                                <p class="card-text">Había una vez un pequeño aguacate llamado Avi que soñaba con ser un árbol grande y fuerte. Un día, encontró un árbol mágico que le enseñó que cada semilla tiene un propósito único. Avi aprendió que aunque era pequeño, podía hacer grandes cosas.</p>
+                                <p class="text-muted">Moral: No subestimes el poder de una pequeña semilla.</p>
+                                <div class="story-footer text-center mt-3">
+                                    <i class="fas fa-heart text-success"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="story-header text-center mb-4">
+                                    <i class="fas fa-cloud-sun-rain fa-3x text-success"></i>
+                                    <h3 class="card-title mt-3">La Lluvia y el Aguacate 🌦️</h3>
+                                </div>
+                                <p class="card-text">En un verano muy caluroso, un aguacate llamado Verde se encontró con una nube triste que no podía llover. Verde le enseñó a la nube que cada gota de lluvia es importante para la vida. Juntos, aprendieron que la humildad y la paciencia traen grandes recompensas.</p>
+                                <p class="text-muted">Moral: Cada gota cuenta.</p>
+                                <div class="story-footer text-center mt-3">
+                                    <i class="fas fa-cloud-showers-heavy text-success"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="story-header text-center mb-4">
+                                    <i class="fas fa-leaf fa-3x text-success"></i>
+                                    <h3 class="card-title mt-3">La Familia de Aguacates 🥑</h3>
+                                </div>
+                                <p class="card-text">Una familia de aguacates vivía en un árbol grande. El padre, Maduro, enseñaba a sus hijos sobre la importancia de la unión y el cuidado mutuo. Cuando llegaba el momento de caer, se apoyaban entre ellos para hacer un viaje seguro hasta el suelo.</p>
+                                <p class="text-muted">Moral: Juntos somos más fuertes.</p>
+                                <div class="story-footer text-center mt-3">
+                                    <i class="fas fa-hands-helping text-success"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="bg-dark text-light mt-5 py-4">
             <div class="container text-center">
-                <h3>¡Potaxies!</h3>
+                <h3><i class="fas fa-heart"></i> ¡Potaxies!</h3>
                 <p>¿Sabías que los aguacates tienen su propio emoji? 🥑</p>
                 <p>¡No te pierdas más potaxias en nuestra sección de historias!</p>
-                <a href="#stories" class="btn btn-outline-light">Ir a Historias</a>
+                <a href="#stories" class="btn btn-outline-light"><i class="fas fa-book"></i> Ir a Historias</a>
             </div>
         </footer>
     </main>

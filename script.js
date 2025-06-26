@@ -62,4 +62,3 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('¡Vamos a descubrir las historias más jugosas del mundo del aguacate! 🥑');
         window.location.href = '#stories';
     });
-});

@@ -3,6 +3,9 @@
     --avocado-green: #578B2F;
     --avocado-yellow: #E6E600;
     --avocado-brown: #8B4513;
+    --avocado-dark-brown: #5C3317;
+    --avocado-light-green: #8BC34A;
+    --avocado-gradient: linear-gradient(135deg, var(--avocado-green) 0%, var(--avocado-brown) 100%);
 }
 
 /* Carrusel */
@@ -149,34 +152,289 @@
     margin: 0 0.5rem;
 }
 
+/* Hero Section */
+.hero-section {
+    background: var(--avocado-green);
+    padding: 4rem 0;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+    z-index: 0;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-avocado {
+    background: white;
+    color: var(--avocado-dark-brown);
+    border: 2px solid white;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-avocado:hover {
+    background: transparent;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección Tipos */
+#types .card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    border: 3px solid var(--avocado-green);
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    position: relative;
+}
+
+#types .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--avocado-yellow);
+}
+
+/* Header de la tarjeta */
+#types .card-header {
+    padding: 1rem;
+    background: var(--avocado-green);
+    border-bottom: 2px solid var(--avocado-dark-brown);
+}
+
+#types .card-header h3 {
+    color: var(--avocado-dark-brown);
+    font-weight: 600;
+    margin: 0;
+}
+
+#types .card-header i {
+    color: white;
+}
+
+/* Header de la tarjeta */
+#types .card-header {
+    padding: 1rem;
+    border-bottom: 2px solid var(--avocado-green);
+}
+
+#types .card-header h3 {
+    color: var(--avocado-dark-brown);
+    font-weight: 600;
+}
+
+/* Imagen del aguacate */
+#types .card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#types .card:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido de la tarjeta */
+#types .card-body {
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+#types .info-group {
+    margin-top: 1.5rem;
+}
+
+#types .info-group p {
+    margin-bottom: 0.75rem;
+    color: var(--avocado-dark-brown);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#types .info-group p i {
+    color: var(--avocado-green);
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+#types .info-group p.text-muted {
+    color: #666;
+    font-style: italic;
+}
+
+#types .card i {
+    color: var(--avocado-green);
+    transition: color 0.3s ease;
+}
+
+#types .card:hover i {
+    color: var(--avocado-yellow);
+}
+
+/* Estilos para el contenido de la tarjeta */
+#types .card-body {
+    padding: 2rem;
+}
+
+#types .card h3 {
+    color: var(--avocado-dark-brown);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#types .info-group p {
+    margin-bottom: 0.75rem;
+    color: var(--avocado-dark-brown);
+    font-size: 0.95rem;
+}
+
+#types .info-group p i {
+    color: var(--avocado-green);
+}
+
+#types .info-group p.text-muted {
+    color: #666;
+}
+
+/* Sección Historias */
+#stories .card {
+    border: 2px solid var(--avocado-green);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#stories .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#stories .story-header i {
+    margin-bottom: 1rem;
+}
+
+#stories .card-body {
+    padding: 1.5rem;
+}
+
+#stories .card-title {
+    color: var(--avocado-dark-brown);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#stories .card-text {
+    color: var(--avocado-dark-brown);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#stories .text-muted {
+    font-style: italic;
+    color: var(--avocado-green);
+    margin-top: 1rem;
+}
+
+#stories .story-footer {
+    margin-top: 1.5rem;
+}
+
+#stories .story-footer i {
+    font-size: 2rem;
+}
+
 /* Sección Nutricional */
 #nutrition {
-    background: linear-gradient(135deg, var(--avocado-green) 0%, var(--avocado-brown) 100%);
+    background: var(--avocado-green);
     color: white;
-    padding: 4rem 0;
+    padding: 2rem 0;
+    border-radius: 15px;
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#nutrition::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+    z-index: 0;
 }
 
 #nutrition h2 {
     color: var(--avocado-yellow);
-    margin-bottom: 2.5rem;
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 #nutrition .card {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 1rem;
 }
 
 #nutrition .lead {
+    font-family: 'Times New Roman', serif;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: var(--avocado-brown);
+    color: var(--avocado-dark-brown);
     margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 /* Navbar */
-.bg-avocado {
-    background-color: var(--avocado-green) !important;
+.bg-brown {
+    background-color: var(--avocado-dark-brown) !important;
 }
 
 .navbar-brand {
@@ -189,14 +447,36 @@
     margin-right: 0.5rem;
 }
 
-/* Main Content */
-.avocado-card {
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.nav-link {
+    color: var(--avocado-light-green) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--avocado-yellow) !important;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section, #types, #nutrition {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Emojis */
+.emoji {
+    font-size: 2rem;
+    color: var(--avocado-yellow);
+    margin: 0 0.5rem;
 }
 
 .avocado-card:hover {
